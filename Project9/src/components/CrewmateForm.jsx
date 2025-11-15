@@ -3,12 +3,14 @@ import { useState } from "react";
 export default function CrewmateForm({ initialValues, onSubmit }) {
   const [name, setName] = useState(initialValues.name);
   const [attribute, setAttribute] = useState(initialValues.attribute);
+  const [color,setColor] = useState(initialValues.color);
 
   const attributes = ["Brave", "Smart", "Funny", "Strong"];
+  const colors = ["Blue", "Red", "Pink", "Green", "Yellow", "Black"];
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    onSubmit({ name, attribute });
+    onSubmit({ name, attribute, color });
   };
 
   return (
@@ -35,6 +37,23 @@ export default function CrewmateForm({ initialValues, onSubmit }) {
             }}
           >
             {attr}
+          </button>
+        ))}
+      </div>
+
+        <div>
+        <p>Select Color:</p>
+        {colors.map(col => (
+          <button
+            key={col}
+            type="button"
+            onClick={() => setColor(col)}
+            style={{
+              background: color === col ? "lightgreen" : "lightgray",
+              marginRight: "8px"
+            }}
+          >
+            {col}
           </button>
         ))}
       </div>

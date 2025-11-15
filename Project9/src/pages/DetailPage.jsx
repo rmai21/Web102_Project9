@@ -13,7 +13,8 @@ export default function DetailPage() {
     <div>
       <h1>{crewmate.name}</h1>
       <p>Attribute: {crewmate.attribute}</p>
-      <p>Created: {new Date(crewmate.createdAt).toLocaleString()}</p>
+      <p>Color: {crewmate.color}</p>
+      <p>Created: {new Date(crewmate.created_at).toLocaleString()}</p>
 
       <Link to={`/crewmate/${crewmate.id}/edit`}>Edit Crewmate</Link>
     </div>

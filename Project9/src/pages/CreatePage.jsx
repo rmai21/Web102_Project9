@@ -10,7 +10,7 @@ export default function CreatePage() {
     <div>
       <h1>Create a Crewmate</h1>
       <CrewmateForm
-        initialValues={{ name: "", attribute: "Brave" }}
+        initialValues={{ name: "", attribute: "Brave", color: "Pink"}}
         onSubmit={(data) => {
           addCrewmate(data);
           navigate("/");
