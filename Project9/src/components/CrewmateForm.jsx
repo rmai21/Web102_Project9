@@ -12,8 +12,7 @@ export default function CrewmateForm({ initialValues, onSubmit }) {
   };
 
   return (
-    <form className={`attribute-btn ${attribute === attr ? "selected" : ""}`}
- onSubmit={handleSubmit} style={{ display: "grid", gap: "1rem" }}>
+    <form onSubmit={handleSubmit} style={{ display: "grid", gap: "1rem" }}>
       <label>
         Crewmate Name:
         <input

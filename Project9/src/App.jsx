@@ -3,6 +3,8 @@ import CreatePage from "./pages/CreatePage";
 import SummaryPage from "./pages/SummaryPage";
 import DetailPage from "./pages/DetailPage";
 import EditPage from "./pages/EditPage";
+import './App.css'
+
 
 export default function App() {
   return (
