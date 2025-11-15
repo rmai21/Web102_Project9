@@ -1,0 +1,129 @@
+/* ---------- Global Styles ---------- */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif;
+  background-color: #f9fafb;
+  color: #222;
+}
+
+a {
+  text-decoration: none;
+  color: #2563eb;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- Navigation ---------- */
+
+nav {
+  background: white;
+  padding: 1rem 2rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #e5e7eb;
+  display: flex;
+  gap: 1.5rem;
+  position: sticky;
+  top: 0;
+}
+
+/* ---------- Container ---------- */
+
+div {
+  max-width: 700px;
+  margin: auto;
+}
+
+/* ---------- Forms ---------- */
+
+form {
+  background: white;
+  padding: 1.5rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  margin-top: 0.25rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+button {
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* Primary button */
+button[type="submit"],
+button.save {
+  background-color: #2563eb;
+  color: white;
+}
+
+button[type="submit"]:hover,
+button.save:hover {
+  background-color: #1d4ed8;
+}
+
+/* Attribute Toggle Buttons */
+.attribute-btn {
+  background: #e5e7eb;
+  margin-right: 8px;
+}
+
+.attribute-btn.selected {
+  background: #86efac;
+}
+
+/* Delete Button */
+button.delete {
+  background: #ef4444;
+  color: white;
+  margin-top: 1rem;
+}
+
+button.delete:hover {
+  background: #dc2626;
+}
+
+/* ---------- Summary List ---------- */
+
+.crewmate-card {
+  background: white;
+  padding: 1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.crewmate-card a {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.crewmate-card small {
+  color: #6b7280;
+}
