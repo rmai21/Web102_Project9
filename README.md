@@ -50,7 +50,9 @@ GIF created with Kap
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+- Fixing routing issues
+- Figuring out Supabase
+- Adding a new category 
 
 ## License
 
